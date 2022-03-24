@@ -1,0 +1,14 @@
+body {
+	background-color: pink;
+	text-align: center;
+
+
+}
+.error{
+	color: red;
+	text-align: 50px;
+
+}
+body.div{
+	border-color: blue;
+}

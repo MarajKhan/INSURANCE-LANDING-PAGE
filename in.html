@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="ni.css">
+
+	<title>validation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+    <h1>INSURANCE LADING PAGE</h1>
+    <div class="container" id="div">
+    	<form id="frm" onsubmit="return myform()" method="post" action="in.php">
+    		<label for="name">Name</label>
+    		<input type="text" id="name" name="name" placeholder="Enter your name">
+    		<br><br>
+    		<label for="email">Email</label>
+    		<input type="email" id="email" name="email" placeholder="Enter your email">
+    		<br><br>
+    		<label for="mobile">Mobile No</label>
+    		<input type="text" id="mobile" name="mobile" placeholder="Enter your mobile no">
+    		<br><br>
+    		<label for="City">City</label>
+    		<select id="city" name="city">
+    			<option select hidden value="">>>select city<<</option>
+    			 <option value="Delhi">Delhi</option>
+    			 <option value="Moradabad">Moradabad</option>
+    			 <option value="Banglor">Banglor</option>
+    			 <option value="Luckhnow">Luckhnow</option>
+    		</select><br><br>
+    		<label for="income">Income</label>
+
+    		<select name="income" id="income">
+    			<option value="">Select income</option>
+    			 <option value="20 Lackh">20 Lackh</option>
+    			 <option value="21 lakh">21 lackh</option>
+    			 <option value="22 lakh">22 lackh</option>
+    			 <option value="23 lakh">23 lakh</option>
+    		</select><br><br>
+    		<label for="age">D.O.B</labal>
+    			<input type="date" name="age" id="age"><br><br>
+    		<input type="submit" id="submit" name="submit" value="submit">
+    	
+    	</form>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="ni.js"></script>
+    <script src="jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="jquery-validation/src/additional/nowhitespace.js"></script>
+	
+</body>
+</html>
