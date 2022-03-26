@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="ni.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
 
 	<title>validation</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,7 +39,7 @@
     			 <option value="23 lakh">23 lakh</option>
     		</select><br><br>
     		<label for="age">D.O.B</labal>
-    			<input type="date" name="age" id="age"><br><br>
+    			<input type="date" name="age" id="datepicker"><br><br>
     		<input type="submit" id="submit" name="submit" value="submit">
     	
     	</form>
@@ -50,6 +51,22 @@
     <script src="jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="jquery-validation/dist/additional-methods.min.js"></script>
     <script src="jquery-validation/src/additional/nowhitespace.js"></script>
+	<script src="jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+       
+    <script type="text/javascript">
+       $(document).ready(function(){
+            $('#datepicker').datepicker({
+               dateFormat: "dd-mm-yy",
+               changeMonth: true,
+              changeYear: true,
+              yearRange: '1960 : 2050',
+             maxDate: '-18Y',
+              
+          });
+       });
+
+    </script>
 	
 </body>
 </html>
