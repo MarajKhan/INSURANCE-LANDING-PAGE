@@ -47,7 +47,7 @@ jQuery('#frm').validate({
           city:"Enter Your City Name",
           income:"Enter Your Income",
           age:{
-            required:"Please Enter Your Date Of Birth",
+            required:"Enter Your Date Of Birth and If you are less than 18 years of age this form connot be applied",
             
           },
             
